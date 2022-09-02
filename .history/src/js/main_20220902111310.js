@@ -11,6 +11,11 @@ document.addEventListener('DOMContentLoaded',()=>{
 
     typingWord('Josephmar Diaz')
     contactForm()
+    window.scroll({
+        top: 2500, 
+        left: 0, 
+        behavior: 'smooth'
+      });
 })
 
 
