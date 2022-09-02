@@ -14,6 +14,11 @@ header{
     height: 672px;
 }
 
+
+.menu-responsive{
+    display: none;
+    visibility:hidden;
+}
 .imagen-carrusel{
     height: 672px;
 }
@@ -42,6 +47,70 @@ header{
         }
 
     }
+}
+
+
+@media screen and (max-width:768px) {
+    
+
+    .menu-responsive{
+        color: $color-main;
+        font-size: 1.5rem;
+        border: 1px solid #fff;
+        border-radius: 9px;
+        padding: 4px 10px;
+        background: #fff;
+        z-index: 1000;
+        display: block;
+        visibility: visible;
+        position: fixed;
+        top: 4vh;
+        left: 4vw;
+    }
+
+    .nav-container{
+        z-index: 998;
+        display: flex;
+        justify-content: flex-start;
+        opacity: 0.8;
+        flex-direction: column;
+        top: 0;
+        gap: 10rem;
+        height: 101vh;
+        background: #000;
+        position: fixed;
+        transition:transform 0.3s ease ;
+        transform: translate(-100%,0);
+        overflow-y: auto;
+        width: 100vw;
+    }
+
+    .nav-container a{
+        font-weight: 100;
+        font-size: 30px;
+    }
+
+    .nav-container a:hover{
+        border-bottom: none;
+          color: var(--btn-color);
+      }
+
+    .nav-container.is-active{
+        transform: translate(0,0);
+    }
+    
+    .nav-list{
+
+        li{
+            font-size: 1rem;
+            position: inherit;
+            flex-direction: column;
+            gap: 100px;
+            margin: 33% 37%;
+        }
+    }
+
+
 }
 
 .hero-content{
