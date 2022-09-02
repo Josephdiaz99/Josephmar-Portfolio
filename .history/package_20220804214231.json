@@ -4,7 +4,6 @@
   "description": "my portfolio",
   "main": "main.js",
   "scripts": {
-    "build": "webpack -w",
     "start": "webpack serve --mode development",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
